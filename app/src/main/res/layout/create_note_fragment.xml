@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!---create note content text-->
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/note_content"
+        android:layout_width="match_parent"
+        android:maxLength="300"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:scrollbars = "vertical"
+        android:gravity="top|left"
+        android:textColor="@android:color/black"
+        android:layout_height="300dp" />
+
+        <!--Save note button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/save_note"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:text="Save Note"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:minHeight="35dp"
+            android:maxHeight="35dp"
+            android:layout_height="35dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:text="After inputing text please press save button to save your note!"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
